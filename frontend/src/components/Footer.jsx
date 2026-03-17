@@ -8,15 +8,11 @@ function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <svg 
-                  viewBox="0 0 24 24" 
-                  className="w-5 h-5 text-primary-foreground"
-                  fill="currentColor"
-                >
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="떴콘 로고" 
+                className="w-8 h-8 rounded-lg object-cover"
+              />
               <span className="text-xl font-bold text-foreground">떴콘</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
