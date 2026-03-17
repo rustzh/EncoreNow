@@ -56,7 +56,7 @@ function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground text-center">
-            2024 떴콘(EncoreNow). All rights reserved.
+            2026 떴콘(EncoreNow). All rights reserved.
           </p>
         </div>
       </div>

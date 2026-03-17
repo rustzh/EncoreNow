@@ -107,10 +107,6 @@ function KeywordsPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary mt-0.5">-</span>
-              공연장 이름도 키워드로 등록할 수 있어요 (예: 잠실, 올림픽홀)
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-0.5">-</span>
               영문/한글 모두 등록 가능합니다
             </li>
           </ul>
