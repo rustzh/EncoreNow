@@ -111,6 +111,37 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Supported Ticket Sites */}
+      <section className="py-16 bg-background border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+              지원하는 티켓 사이트
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              주요 티켓 예매 사이트의 콘서트 정보를 실시간으로 수집합니다
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { name: 'NOL 티켓', color: 'bg-[#FF6B35]' },
+              { name: '멜론 티켓', color: 'bg-[#00C73C]' },
+              { name: 'YES24 티켓', color: 'bg-[#1E3A5F]' },
+              { name: '티켓링크', color: 'bg-[#E31C5F]' },
+            ].map((site, index) => (
+              <div 
+                key={index}
+                className="flex items-center justify-center gap-3 p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors"
+              >
+                <div className={`w-3 h-3 rounded-full ${site.color}`} />
+                <span className="font-medium text-foreground">{site.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
